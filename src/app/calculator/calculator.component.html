@@ -1,0 +1,30 @@
+<div class="border" style="text-align: center;background-color: #f3933f;">
+  <div class="m-2">
+      <app-display></app-display>
+  </div>
+  <div role="toolbar" aria-label="Toolbar with button groups">
+      <div class="btn-group btn-group-lg" role="group" aria-label="First group">
+        <app-button *ngFor="let val of ['ON', 'CLEAR', '/']" [value]="val" ></app-button>
+      </div>
+    </div>
+  <div role="toolbar" aria-label="Toolbar with button groups">
+    <div class="btn-group btn-group-lg" role="group" aria-label="First group">
+      <app-button *ngFor="let val of [7,8,9,'x']" [value]="val" ></app-button>
+    </div>
+  </div>
+  <div role="toolbar" aria-label="Toolbar with button groups">
+    <div class="btn-group btn-group-lg" role="group" aria-label="Second group">
+      <app-button *ngFor="let val of [4,5,6, '-']" [value]="val" ></app-button>
+    </div>
+  </div>
+  <div role="toolbar" aria-label="Toolbar with button groups">
+    <div class="btn-group btn-group-lg" role="group" aria-label="Third group">
+      <app-button *ngFor="let val of [1,2,3, '+']" [value]="val" ></app-button>
+    </div>
+  </div>
+  <div role="toolbar" aria-label="Toolbar with button groups">
+      <div class="btn-group btn-group-lg" role="group" aria-label="Third group">
+        <app-button *ngFor="let val of [0, '.', 'ENTER']" [value]="val" ></app-button>
+      </div>
+    </div>
+</div>
